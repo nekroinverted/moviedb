@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/movies', 'MovieController@apiIndex');
+Route::get('/movies', 'MovieController@indexApi');
 Route::get('search/{title}', 'MovieController@searchApi');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
